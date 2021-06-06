@@ -5,6 +5,29 @@ const { uuid, isUuid } = require('uuidv4');
 const app = express();
 app.use(express.json());
 
+/**
+ * Métodos HTTP:
+ * 
+ * GET: Buscar informações do back-end
+ * POST: Criar uma informação no back-end
+ * PUT/PATCH: Alterar uma informação no back-end
+ * DELETE: Deletar uma informação no back-end
+ */
+
+/**
+ * Tipos de parâmetros:
+ * 
+ * Query params: Filtros e paginação
+ * Route params: Identificar recursos (Atualizar/Deletar)
+ * Request body: Conteúdo na hora criar ou editar um recurso (JSON)
+ */
+
+/**
+ * Meddleware:
+ * 
+ * Interceptador de requisições que interromper totalmente a requisição ou alterar dados da requisição.
+ */
+
 const projects = [];
 
 function logRequests(request, response, next) {
